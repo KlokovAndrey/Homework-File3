@@ -25,7 +25,7 @@ public class MyPolynomial {
         return s;
     }
 
-    public double evaluate(double x){
+    public double evaluate(double x){      //polynomial value
         double result=0;
         for(int i=0;i<coeffs.length;i++){
             result+=coeffs[i]*pow(x,i);
@@ -33,7 +33,7 @@ public class MyPolynomial {
         return result;
     }
 
-    public MyPolynomial add(MyPolynomial right){
+    public MyPolynomial add(MyPolynomial right){       //addition
         double arr[];
         if(this.coeffs.length>right.coeffs.length) {
             arr = new double[this.coeffs.length];

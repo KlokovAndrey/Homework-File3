@@ -67,7 +67,7 @@ public class MyComplex {
 
     public double argument(){
         return Math.asin(imag/magnitude());
-    }
+    }  //in radians
 
     public MyComplex add(MyComplex right){
         right.real=this.real+right.real;
