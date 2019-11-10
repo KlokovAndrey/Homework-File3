@@ -1,5 +1,7 @@
 package com.file3.BallClass;
 
+import java.util.Objects;
+
 public class Container {
     private int x1;
     private int y1;
@@ -42,5 +44,26 @@ public class Container {
                 "), (" + x2 +
                 "," + y2 +
                 ")]";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Container container = (Container) o;
+        return x1 == container.x1 &&
+                y1 == container.y1 &&
+                x2 == container.x2 &&
+                y2 == container.y2;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + x1;
+        result = 31 * result + y1;
+        result = 31 * result + x2;
+        result = 31 * result + y2;
+        return result;
     }
 }

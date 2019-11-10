@@ -82,6 +82,7 @@ public class MyComplex {
         return result;
     }
 
+
     public MyComplex subtract(MyComplex right){
         MyComplex result = new MyComplex();
         right.real=right.real-this.real;
@@ -112,6 +113,23 @@ public class MyComplex {
         MyComplex result = new MyComplex();
         result.real=this.real;
         result.imag=-this.imag;
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyComplex myComplex = (MyComplex) o;
+        return Double.compare(myComplex.real, real) == 0 &&
+                Double.compare(myComplex.imag, imag) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31*result + (int)Double.doubleToLongBits(real);
+        result = 31*result + (int)Double.doubleToLongBits(imag);
         return result;
     }
 }

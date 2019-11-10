@@ -65,4 +65,18 @@ public class MyPolynomial {
         MyPolynomial myPolynomial = new MyPolynomial(arr);
         return myPolynomial;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MyPolynomial that = (MyPolynomial) o;
+        return Arrays.equals(coeffs, that.coeffs);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        return 31*result + Arrays.hashCode(coeffs);
+    }
 }
