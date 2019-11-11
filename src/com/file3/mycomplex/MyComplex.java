@@ -1,6 +1,4 @@
-package com.file3.MyComplexClass;
-
-import java.util.Objects;
+package com.file3.mycomplex;
 
 import static java.lang.Math.sqrt;
 

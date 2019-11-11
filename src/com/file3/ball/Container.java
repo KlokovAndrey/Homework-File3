@@ -1,6 +1,4 @@
-package com.file3.BallClass;
-
-import java.util.Objects;
+package com.file3.ball;
 
 public class Container {
     private int x1;

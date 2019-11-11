@@ -1,7 +1,7 @@
 package com.file3;
 
-import com.file3.BallClass.Ball;
-import com.file3.BallClass.Container;
+import com.file3.ball.Ball;
+import com.file3.ball.Container;
 
 public class Main {
     public static void main(String[] args) {

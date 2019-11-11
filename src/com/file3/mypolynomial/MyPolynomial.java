@@ -1,4 +1,4 @@
-package com.file3.MyPolynomialClass;
+package com.file3.mypolynomial;
 
 import java.util.Arrays;
 

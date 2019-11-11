@@ -1,6 +1,4 @@
-package com.file3.BallClass;
-
-import java.util.Objects;
+package com.file3.ball;
 
 import static java.lang.Math.*;
 
